@@ -59,6 +59,10 @@ header.masthead .h1 {
     background: linear-gradient(0deg, rgba(34, 23, 15, 0.8) 10%, rgba(76, 43, 105, 0.8) 50%);
 }
 
+#footer{
+    background: linear-gradient(0deg, rgba(76, 43, 105, 0.8)10%,rgba(34, 23, 15, 0.8) 50%);
+}
+
 #nAbout, #nSkills, #nProjects, #nContact{
     color:white;
 }
