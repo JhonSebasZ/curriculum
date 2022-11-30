@@ -186,44 +186,33 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div class="col-12 col-lg-10">
-                        <form data-sb-form-api-token="API_TOKEN">
+                        <form data-sb-form-api-token="API_TOKEN" action="https://formsubmit.co/b25538d31c246f004447bdf91290bc47" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                                    data-sb-validations="required" />
+                                    data-sb-validations="required" required name="name"/>
                                 <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                                    data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.
-                                </div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
+
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
-                                    data-sb-validations="required" />
+                                    data-sb-validations="required" required name="phone"/>
                                 <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is
-                                    required.
-                                </div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text"
                                     placeholder="Enter your message here..." style="height: 10rem"
-                                    data-sb-validations="required"></textarea>
+                                    data-sb-validations="required" required name="message"></textarea>
                                 <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
-                                </div>
                             </div>
                             <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-xl" id="submitButton"
-                                    type="submit">Submit</button></div>
+                            <div class="d-grid"><button class="btn btn-primary btn-xl" id="submitButton" type="submit"
+                                    ">Submit</button></div>
+                                    
+                            <input type="hidden" name="_next" value="https://jhonsebasz.github.io/curriculum/#contact">
+                            <input type="hidden" name="_captcha" value="false">
                         </form>
                     </div>
                 </div>
@@ -231,22 +220,21 @@
 
     <footer class="page-section" id="footer">
         <!-- <div class="col-12 col-lg-12"> -->
-            <div class="container d-flex justify-content-center sm-w-50 w-25">
-                <a href="http://www.linkedin.com/in/jhonsebastian2250" class="w-50"
-                    target="_blanck">
-                    <img class="img-fluid" src="imagenes/linkedln.png" alt="linkedln" />
-                </a>
-                <a href="" class="w-50">
-                    <img class="img-fluid" src="imagenes/skipe.png" alt="skipe" />
-                </a>
-                <a href="https://github.com/JhonSebasZ" class="w-50" target="_blank">
-                    <img class="img-fluid" src="imagenes/git.png" alt="git" />
-                </a>
-                <a href="https://wa.link/4cebjf" class="w-50" target="_blank">
-                    <img class="img-fluid" src="imagenes/whatsapp.png" alt="git" />
-                </a>
-            </div>
-            
+        <div class="container d-flex justify-content-center sm-w-50 w-25">
+            <a href="http://www.linkedin.com/in/jhonsebastian2250" class="w-50" target="_blanck">
+                <img class="img-fluid" src="imagenes/linkedln.png" alt="linkedln" />
+            </a>
+            <a href="" class="w-50">
+                <img class="img-fluid" src="imagenes/skipe.png" alt="skipe" />
+            </a>
+            <a href="https://github.com/JhonSebasZ" class="w-50" target="_blank">
+                <img class="img-fluid" src="imagenes/git.png" alt="git" />
+            </a>
+            <a href="https://wa.link/4cebjf" class="w-50" target="_blank">
+                <img class="img-fluid" src="imagenes/whatsapp.png" alt="git" />
+            </a>
+        </div>
+
         <!-- </div> -->
         <div class="container px-4 px-lg-5 mt-5 text-black">
             <div class="small text-center ">Copyright &copy; 2022 - Jhon Sebastian Zuñiga</div>
@@ -257,10 +245,7 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
 
         </script>
-    <script src="js/index.js">
-
-
-    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
